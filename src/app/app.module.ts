@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { IntroComponent } from './pages/intro/intro.component';
@@ -20,6 +21,7 @@ import { FooterComponent } from './widgets/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'home', component: IntroComponent },
       { path: 'about', component: AboutComponent },
