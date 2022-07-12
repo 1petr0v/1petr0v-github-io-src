@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '1petr0v-github-io-src';
+  currentYear: number = new Date().getFullYear();
 }
