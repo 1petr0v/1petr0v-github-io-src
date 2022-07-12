@@ -1,5 +1,7 @@
 # 1petr0vGithubIoSrc
 
+Deploy done as per https://github.com/marketplace/actions/push-directory-to-another-repository
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
 ## Development server
