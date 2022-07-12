@@ -7,6 +7,7 @@ import { IntroComponent } from './pages/intro/intro.component';
 import { NavbarComponent } from './widgets/navbar/navbar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { FooterComponent } from './widgets/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     IntroComponent,
     NavbarComponent,
     AboutComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
