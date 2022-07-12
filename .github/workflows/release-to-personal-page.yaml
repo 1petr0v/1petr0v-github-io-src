@@ -23,12 +23,15 @@ jobs:
     - name: Build
       run: npm run build:prod
 
+    - name: Generate 404
+      run: cp docs/index.html docs/404.html
+
     - name: Publish to personal page
       uses: cpina/github-action-push-to-another-repository@main
       env:
         SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
       with:
-        source-directory: 'dist/1petr0v-github-io-src'
+        source-directory: 'docs/1petr0v-github-io-src'
         destination-github-username: '1petr0v'
         destination-repository-name: '1petr0v.github.io'
         user-email: petrov.igor.od+personal_page@gmail.com
